@@ -2,7 +2,7 @@
 
 ## Objective
 
-The motifs, or small regions of the DNA that are shared between different different proteins, can have an impact on biological functions of a gene. Multiple motif binding sites can work together and regulate gene expression. These sequences can be as short as 3 nucleotides and as along as over 10 nucleotides. It is possible some motif binding sites are regulators of alternative splicing, a biological process where introns are spliced and exons are joined together for protein synthesis, where certain motif binding sites can be an activator or repressor for exon inclusion
+The motifs, or small regions of the DNA that are shared between different different proteins, can have an impact on biological functions of a gene. Multiple motif binding sites can work together and regulate gene expression. These sequences can be as short as 3 nucleotides and as along as over 10 nucleotides. It is possible some motif binding sites are regulators of alternative splicing, a biological process where introns are spliced and exons are joined together for protein synthesis, where certain motif binding sites can be an activator or repressor for exon inclusion.
 
 The objective of this motif-mark script is to determine and visualize motif-binding sites on DNA sequences. The script will return one figure for a single FASTA file. In the figure, motif binding sites will be colored in boxes to scale with the DNA sequence. This figure is to help understand the location of the motif binding sites and support biological conclusions.
 
