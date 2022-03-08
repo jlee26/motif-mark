@@ -2,17 +2,15 @@
 
 ## Objective
 
-The motifs, or small regions of the DNA that are shared upon different different proteins, can have an impact on the important biological functions of a gene. Multiple motifs can work together and regulate gene expression. 
+The motifs, or small regions of the DNA that are shared between different different proteins, can have an impact on biological functions of a gene. Multiple motif binding sites can work together and regulate gene expression. These sequences can be as short as 3 nucleotides and as along as over 10 nucleotides. It is possible some motif binding sites are regulators of alternative splicing, a biological process where introns are spliced and exons are joined together for protein synthesis, where certain motif binding sites can be an activator or repressor for exon inclusion
 
-The objective of this motif-mark is to determine and visualize motif-binding site on DNA sequences.
-
-##
+The objective of this motif-mark script is to determine and visualize motif-binding sites on DNA sequences. The script will return one figure for a single FASTA file. In the figure, motif binding sites will be colored in boxes to scale with the DNA sequence. This figure is to help understand the location of the motif binding sites and support biological conclusions.
 
 ## Setting up environment
-The python script uses Pycairo to create a figure with motifs. Python 3 and Pycairo (version) should be installed in the environment.
+The motif-mark script uses Pycairo to create a figure with motif binding sites. Python (3.8.12) and Pycairo should be installed to the environment.
 
 ## How to use
-In the working directory, there should be 3 files:
+In the working directory, there should be 3 files (more described below):
 
 1. motif-mark-oop.py
 2. FASTA file
@@ -35,8 +33,8 @@ Example:
 ## Input
 The python script will require two files:
 
-1. FASTA file: The fasta file contains a header and DNA sequences of the reads.
-2. Motif text file: The file contains a motif on every line. This script can accept ambiguous nucleotide motifs.
+1. FASTA file: The fasta file contains a header and DNA sequences of the reads. The DNA sequences are case sensitive. Upper cases indicate exons and lower cases indicate introns.
+2. Motif text file: The file contains a motif on every line. This script can accept ambiguous nucleotide motifs. This file is NOT case sensitive.
 
 | Description  |     Symbol    | Bases represented |
 | ------------ | ------------- | ----------------- |
@@ -56,7 +54,7 @@ The python script will require two files:
 ## Output
 The python script will return 2 output files.
 
-1. oneline_fasta.txt : This file contains the FASTA file, concatenating the multiple lines of sequence into one sequence line. Therefore, this file alternates between header and sequence line for every new line.
+1. oneline_fasta.txt : This file is the FASTA file concatenating the multiple lines of sequence into one sequence line.
 2. 'fastafilename'.png : The png will have the same file name as the FASTA file. The png will have visualizations of motifs for every reads.
 
 ## Things to work on:
