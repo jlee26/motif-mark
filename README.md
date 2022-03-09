@@ -42,7 +42,7 @@ The python script will require two files:
 |   Cytosine   |       C       |          C        |
 |   Guanine    |       G       |          G        |
 |   Thymine    |       T       |          T        |
-|    Uracil    |       U       |        U/T        |
+|    Uracil    |       U       |          T        |
 |     Weak     |       W       |        A/T        |
 |    Strong    |       S       |        C/G        |
 |     Amino    |       M       |        A/C        |
